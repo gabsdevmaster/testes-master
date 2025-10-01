@@ -1,0 +1,169 @@
+<script type="text/javascript">
+    function mostrarInicio() {
+        document.getElementById('btnInicio').style.display = 'none';
+        document.getElementById('btnAulas').style.display = 'inline-block';
+        document.getElementById('btnMaterialApoio').style.display = 'inline-block';
+        document.getElementById('btnEntregaRedacao').style.display = 'inline-block';
+        document.getElementById('btnBancoQuestoes').style.display = 'inline-block';
+        document.getElementById('btnSuporte').style.display = 'inline-block';
+        ocultarAulas();
+    }
+
+    function ocultarInicio() {
+        document.getElementById('btnAulas').style.display = 'none';
+        document.getElementById('btnMaterialApoio').style.display = 'none';
+        document.getElementById('btnEntregaRedacao').style.display = 'none';
+        document.getElementById('btnBancoQuestoes').style.display = 'none';
+        document.getElementById('btnSuporte').style.display = 'none';
+    }
+
+    function mostrarAulas() {
+
+        document.getElementById('btnInicio').style.display = 'inline-block';
+        document.getElementById('btnBiologia').style.display = 'inline-block';
+        document.getElementById('btnQuimica').style.display = 'inline-block';
+        document.getElementById('btnFisica').style.display = 'inline-block';
+        document.getElementById('btnHistoria').style.display = 'inline-block';
+        document.getElementById('btnGeografia').style.display = 'inline-block';
+        document.getElementById('btnSociologia').style.display = 'inline-block';
+        document.getElementById('btnFilosofia').style.display = 'inline-block';
+        ocultarInicio();
+    }
+
+    function ocultarAulas() {
+
+        document.getElementById('btnInicio').style.display = 'none';
+        document.getElementById('btnBiologia').style.display = 'none';
+        document.getElementById('btnQuimica').style.display = 'none';
+        document.getElementById('btnFisica').style.display = 'none';
+        document.getElementById('btnHistoria').style.display = 'none';
+        document.getElementById('btnGeografia').style.display = 'none';
+        document.getElementById('btnSociologia').style.display = 'none';
+        document.getElementById('btnFilosofia').style.display = 'none';
+    }
+</script>
+
+<p>
+    <div style="display:flex; flex-direction:column; gap:10px; max-width:200px;">
+        <a id="btnInicio" href="#" style="
+        display: none;
+        padding: 12px 22px;
+        background-color: #2e7d32;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        text-align: center;
+        transition: all 0.25s ease;
+        min-width: 120px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    " onclick="mostrarInicio(); return false;">
+    Início
+    </a>
+    </div>
+</p>
+
+<div style="display:flex; flex-direction:column; gap:10px; max-width:200px;">
+    <a id="btnAulas" href="#" style="
+      padding: 14px 28px;
+      background-color: #1a237e;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      text-align: center;
+      transition: all 0.25s ease;
+      min-width: 160px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      margin-right: 8px;
+   " onmouseover="this.style.backgroundColor='#283593';
+    this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)';
+    " onmouseout="this.style.backgroundColor='#1a237e'; 
+    this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)';
+    " onmousedown="this.style.transform='translateY(2px)';
+    " onmouseup="this.style.transform='translateY(0)';" onclick="mostrarAulas(); return false;">
+   Aulas
+</a>
+
+    <a id="btnMaterialApoio" href="#" style=" padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align: center;
+        transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   Material de Apoio
+</a>
+
+    <a id="btnEntregaRedacao" href="#" style=" padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align: center;
+        transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   Entrega de Redação 
+</a>
+
+    <a id="btnBancoQuestoes" href="#" style=" padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align: center;
+        transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   Banco de Questões 
+</a>
+
+    <a id="btnSuporte" href="#" style=" padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align: center; transition:
+        all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   Suporte 
+</a>
+</div>
+
+<div style="display:flex; flex-direction:column; gap:10px; max-width:200px; ">
+    <a id="btnBiologia" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
+        center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   Biologia
+</a>
+
+    <a id="btnQuimica" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
+        center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   Química
+</a>
+
+    <a id="btnFisica" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
+        center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   Física
+</a>
+
+    <a id="btnHistoria" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
+        center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   História
+</a>
+
+    <a id="btnGeografia" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
+        center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   Geografia
+</a>
+
+    <a id="btnSociologia" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
+        center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   Sociologia
+</a>
+
+    <a id="btnFilosofia" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
+        center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   Filosofia
+</a>
+
+    <a id="btnLinguaPortuguesa" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
+        center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   Língua Portuguesa
+</a>
+
+
+
+
+</div>

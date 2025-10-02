@@ -7,6 +7,8 @@
             document.getElementById('btnEntregaRedacao').style.display = 'grid';
             document.getElementById('btnBancoQuestoes').style.display = 'grid';
             document.getElementById('btnSuporte').style.display = 'grid';
+            document.getElementById('colunaInicio').style.display = 'grid';
+
             ocultarAulas();
         }
 
@@ -16,6 +18,8 @@
             document.getElementById('btnEntregaRedacao').style.display = 'none';
             document.getElementById('btnBancoQuestoes').style.display = 'none';
             document.getElementById('btnSuporte').style.display = 'none';
+            document.getElementById('colunaInicio').style.display = 'none';
+
         }
 
         function mostrarAulas() {
@@ -37,7 +41,6 @@
             document.getElementById('btnMatematica').style.display = 'grid';
             document.getElementById('btnRedacao').style.display = 'grid';
             document.getElementById('colunaAulas').style.display = 'grid';
-
             ocultarInicio();
         }
 
@@ -61,6 +64,10 @@
             document.getElementById('btnRedacao').style.display = 'none';
             document.getElementById('colunaAulas').style.display = 'none';
 
+        }
+
+        function mostrarMaterialApoio() {
+            document.getElementById('btnAulas').style.display = 'none';
         }
     </script>
 
@@ -86,7 +93,17 @@
         </div>
     </p>
 
-    <div style="display:flex; flex-direction:column; gap:10px; max-width:200px;">
+    <div id="colunaInicio" style=" 
+        background: #c8e6c9; 
+        padding: 10px; 
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 20px; 
+        max-height: 300px;
+        max-width: 400px; 
+        overflow-y: auto;">
+
         <a id="btnAulas" href="#" style="
       padding: 14px 28px;
       background-color: #1a237e;
@@ -141,7 +158,9 @@
             border-radius: 8px;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
             gap: 20px; 
-            display: none;">
+            max-height: 200px;
+            max-width: 500px;
+            overflow-y: auto;">
 
         <a id="btnBiologia" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
         center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
@@ -245,16 +264,26 @@
         <a id="btnLCT" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
         center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
         ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
-   LCT - Linguagem, Códigos e Tecnologias
+   LCT - Linguagem, Códigos e suas Tecnologias
 </a>
 
+        <a id="btnCHT" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
+        center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   CHT - Ciências Humanas e suas Tecnologias
+</a>
 
+        <a id="btnCNT" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
+        center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   CNT - Ciências da Natureza e suas Tecnologias
+</a>
 
-
-
-
-
-
+        <a id="btnMT" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
+        center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+   MT - Matemática e suas Tecnologias
+</a>
     </div>
 
 

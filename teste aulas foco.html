@@ -10,6 +10,7 @@
             document.getElementById('colunaInicio').style.display = 'grid';
 
             ocultarAulas();
+            ocultarMaterialApoio();
         }
 
         function ocultarInicio() {
@@ -25,6 +26,7 @@
         function mostrarAulas() {
 
             document.getElementById('btnInicio').style.display = 'grid';
+
             document.getElementById('btnBiologia').style.display = 'grid';
             document.getElementById('btnQuimica').style.display = 'grid';
             document.getElementById('btnFisica').style.display = 'grid';
@@ -41,12 +43,14 @@
             document.getElementById('btnMatematica').style.display = 'grid';
             document.getElementById('btnRedacao').style.display = 'grid';
             document.getElementById('colunaAulas').style.display = 'grid';
+
             ocultarInicio();
         }
 
         function ocultarAulas() {
 
             document.getElementById('btnInicio').style.display = 'none';
+
             document.getElementById('btnBiologia').style.display = 'none';
             document.getElementById('btnQuimica').style.display = 'none';
             document.getElementById('btnFisica').style.display = 'none';
@@ -67,7 +71,28 @@
         }
 
         function mostrarMaterialApoio() {
-            document.getElementById('btnAulas').style.display = 'none';
+
+            document.getElementById('btnInicio').style.display = 'grid';
+
+            document.getElementById('colunaMaterialApoio').style.display = 'grid';
+            document.getElementById('btnLCT').style.display = 'grid';
+            document.getElementById('btnCHT').style.display = 'grid';
+            document.getElementById('btnCNT').style.display = 'grid';
+            document.getElementById('btnMT').style.display = 'grid';
+
+            ocultarInicio();
+        }
+
+        function ocultarMaterialApoio() {
+
+            document.getElementById('btnInicio').style.display = 'none';
+
+            document.getElementById('colunaMaterialApoio').style.display = 'none';
+
+            document.getElementById('btnLCT').style.display = 'none';
+            document.getElementById('btnCHT').style.display = 'none';
+            document.getElementById('btnCNT').style.display = 'none';
+            document.getElementById('btnMT').style.display = 'none';
         }
     </script>
 
@@ -129,7 +154,7 @@
 
         <a id="btnMaterialApoio" href="#" style=" padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align: center;
         transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
-        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; ">
+        ; this.style.boxShadow='0 3px 8px rgba(0,0,0,0.15)' ; " onmousedown="this.style.transform='translateY(2px)' ; " onmouseup="this.style.transform='translateY(0)' ; " onclick="mostrarMaterialApoio(); return false;">
    Material de Apoio
 </a>
 
@@ -259,7 +284,9 @@
             border-radius: 8px;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
             gap: 20px; 
-            display: none;">
+            max-height: 200px;
+            max-width: 500px;
+            overflow-y: auto;">
 
         <a id="btnLCT" href="# " style=" display: none; padding: 14px 28px; background-color: #1a237e; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 1rem; font-family: 'Segoe UI', Arial, sans-serif; text-align:
         center; transition: all 0.25s ease; min-width: 160px; box-shadow: 0 3px 8px rgba(0,0,0,0.15); margin-right: 8px; " onmouseover="this.style.backgroundColor='#283593' ; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.2)' ; " onmouseout="this.style.backgroundColor='#1a237e'
